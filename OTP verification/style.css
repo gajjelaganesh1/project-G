@@ -1,0 +1,108 @@
+@import url();
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
+}
+.container{
+    width:300px;
+    height: auto;
+    padding:40px 30px;
+    background-color: lightgray;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+}
+h4{
+    font-size:20px;
+    color: #121121
+}
+.input_field_box input:focus{
+    outline:1.5px solid #9c0c48;
+    outline-offset: 2px;
+}
+
+form button{
+    margin-top: 25px;
+    width: 92%;
+    color: #141414;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    pointer-events: none;
+    cursor:pointer;
+    background: #8f8c8c;
+    transition: all 0.2s ease;
+
+}
+form button.active{
+    background: red;
+    pointer-events: auto;
+    color: #000000
+}
+form button:hover{
+    background: red;
+    
+}
+.form{
+    width: 100;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top:20px;
+}
+.input_field_box input{
+    border:none;
+    max-width:50px;
+    height: 50px;
+    text-align: center;
+    border-radius:5px;
+    background: #f0f0f0;
+    font-size:25px;
+}
+
+.input_field_box input::-webkit-inner-spin-button,
+.input_field_box input::-webkit-outer-spin-button{
+    display: none;
+}
+.form{
+    width: 100;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top:20px;
+}
+.input_field_box {
+    width: 100px;
+    height: auto;
+   display: flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+}
+.input_field_box input{
+    border: none;
+    max-width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f0f0f0;
+    font-size: 25px;
+}
+.input_field_box input::-webkit-inner-spin-button,
+.input_field_box input::-webkit-outer-spin-button{
+    display: none;
+}
